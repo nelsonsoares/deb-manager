@@ -49,8 +49,15 @@ source ~/.zshrc
 
 For **Bash**:
 ```bash
-echo 'alias deb-uninstall="$HOME/Documentos/gerenciador-deb/gerenciador-deb.sh"' >> ~/.bashrc
-source ~/.bashrc
+nano ~/.bashrc 
+#or
+nano ~/.zshrc
+
+alias deb-uninstall="$HOME/Documentos/gerenciador-deb/gerenciador-deb.sh"
+
+source ~/.bashrc 
+#or 
+source ~/.zshrc
 ```
 
 ---
