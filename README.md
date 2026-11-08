@@ -67,7 +67,7 @@ nano ~/.bashrc
 #or
 nano ~/.zshrc
 
-alias deb-uninstall="$HOME/Documentos/gerenciador-deb/gerenciador-deb.sh"
+alias ger-deb="$HOME/Documentos/gerenciador-deb/gerenciador-deb.sh"
 
 source ~/.bashrc 
 #or 
@@ -81,7 +81,7 @@ source ~/.zshrc
 ### Interactive menu
 
 ```bash
-deb-uninstall
+ger-deb
 ```
 
 Displays the main menu:
@@ -100,11 +100,11 @@ Displays the main menu:
 
 | Command                     | Action                                      |
 |-----------------------------|---------------------------------------------|
-| `deb-uninstall`             | Opens the interactive menu                  |
-| `deb-uninstall --list`      | Lists all installed .deb packages           |
-| `deb-uninstall -l`          | Shortcut for `--list`                       |
-| `deb-uninstall --remove`    | Goes directly to the uninstall screen       |
-| `deb-uninstall -r`          | Shortcut for `--remove`                     |
+| `ger-deb`                   | Opens the interactive menu                  |
+| `ger-deb --list`            | Lists all installed .deb packages           |
+| `ger-deb -l`                | Shortcut for `--list`                       |
+| `ger-deb --remove`          | Goes directly to the uninstall screen       |
+| `ger-deb -r`                | Shortcut for `--remove`                     |
 
 ### Navigation
 
