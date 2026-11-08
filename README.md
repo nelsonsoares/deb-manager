@@ -44,16 +44,16 @@ Run these commands from inside the cloned folder to create the destination direc
 
 ```bash
 mkdir -p "$HOME/Documentos/deb-manager"
-mv gerenciador-deb.sh "$HOME/Documentos/deb-manager/"
-chmod +x "$HOME/Documentos/deb-manager/gerenciador-deb.sh"
+mv deb-manager.sh "$HOME/Documentos/deb-manager/"
+chmod +x "$HOME/Documentos/deb-manager/deb-manager.sh"
 ```
 
 #### Option B: Manually (Via File Manager)
 1. Open your File Manager and navigate to your **Home** folder (`~/`).
 2. Open or create the **`Documentos`** folder (if it doesn't already exist).
 3. Inside `Documentos`, create a new folder named **`deb-manager`**.
-4. Copy or move the file **`gerenciador-deb.sh`** into `~/Documentos/deb-manager/`.
-5. Ensure the file has execution permissions (Right-click `gerenciador-deb.sh` → **Properties** → **Permissions** → check **"Allow executing file as program"**, or run `chmod +x ~/Documentos/deb-manager/gerenciador-deb.sh` in the terminal).
+4. Copy or move the file **`deb-manager.sh`** into `~/Documentos/deb-manager/`.
+5. Ensure the file has execution permissions (Right-click `deb-manager.sh` → **Properties** → **Permissions** → check **"Allow executing file as program"**, or run `chmod +x ~/Documentos/deb-manager/deb-manager.sh` in the terminal).
 
 ---
 
@@ -67,7 +67,7 @@ nano ~/.bashrc
 #or
 nano ~/.zshrc
 
-alias ger-deb="$HOME/Documentos/deb-manager/gerenciador-deb.sh"
+alias ger-deb="$HOME/Documentos/deb-manager/deb-manager.sh"
 
 source ~/.bashrc 
 #or 
@@ -151,7 +151,7 @@ If the uninstallation fails, the script automatically identifies the cause and s
 
 ```
 deb-manager/
-├── gerenciador-deb.sh   # Main script (CLI)
+├── deb-manager.sh       # Main script (CLI)
 ├── README.md            # Documentation (English)
 └── README.pt-BR.md      # Documentation (Português)
 ```

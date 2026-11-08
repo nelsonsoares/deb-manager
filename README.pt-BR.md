@@ -44,16 +44,16 @@ Execute estes comandos de dentro da pasta clonada para criar a pasta de destino 
 
 ```bash
 mkdir -p "$HOME/Documentos/deb-manager"
-mv gerenciador-deb.sh "$HOME/Documentos/deb-manager/"
-chmod +x "$HOME/Documentos/deb-manager/gerenciador-deb.sh"
+mv deb-manager.sh "$HOME/Documentos/deb-manager/"
+chmod +x "$HOME/Documentos/deb-manager/deb-manager.sh"
 ```
 
 #### Opção B: Manualmente (Via Gerenciador de Arquivos)
 1. Abra o Gerenciador de Arquivos e vá até a sua pasta **Home** (Pasta Pessoal).
 2. Acesse ou crie a pasta **`Documentos`** (caso não exista).
 3. Dentro de `Documentos`, crie uma nova pasta chamada **`deb-manager`**.
-4. Copie ou mova o arquivo **`gerenciador-deb.sh`** para dentro de `~/Documentos/deb-manager/`.
-5. Garanta que o arquivo tenha permissão de execução (clique com o botão direito em `gerenciador-deb.sh` → **Propriedades** → **Permissões** → marque **"Permitir execução do arquivo como programa"**, ou execute `chmod +x ~/Documentos/deb-manager/gerenciador-deb.sh` no terminal).
+4. Copie ou mova o arquivo **`deb-manager.sh`** para dentro de `~/Documentos/deb-manager/`.
+5. Garanta que o arquivo tenha permissão de execução (clique com o botão direito em `deb-manager.sh` → **Propriedades** → **Permissões** → marque **"Permitir execução do arquivo como programa"**, ou execute `chmod +x ~/Documentos/deb-manager/deb-manager.sh` no terminal).
 
 ---
 
@@ -67,7 +67,7 @@ nano ~/.bashrc
 #ou
 nano ~/.zshrc
 
-alias ger-deb="$HOME/Documentos/deb-manager/gerenciador-deb.sh"
+alias ger-deb="$HOME/Documentos/deb-manager/deb-manager.sh"
 
 source ~/.bashrc 
 #ou 
@@ -151,7 +151,7 @@ Caso a desinstalação falhe, o script identifica automaticamente a causa e suge
 
 ```
 deb-manager/
-├── gerenciador-deb.sh   # Script principal (CLI)
+├── deb-manager.sh       # Script principal (CLI)
 ├── README.md            # Documentação (English)
 └── README.pt-BR.md      # Documentação (Português)
 ```
