@@ -41,13 +41,7 @@ chmod +x gerenciador-deb.sh
 
 ### 3. Crie um alias no terminal (opcional, recomendado)
 
-Para **Zsh** (padrão no Zorin OS 18+):
-```bash
-echo 'alias deb-uninstall="$HOME/Documentos/gerenciador-deb/gerenciador-deb.sh"' >> ~/.zshrc
-source ~/.zshrc
-```
-
-Para **Bash**:
+Para **Bash ou ZSH**:
 ```bash
 nano ~/.bashrc 
 #ou
