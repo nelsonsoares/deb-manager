@@ -1,6 +1,6 @@
 # 📦 Gerenciador de Desinstalação .DEB
 
-> **🇺🇸 [Read in English](README.md)**
+> **🇺🇸 [Leia em Inglês](README.md)**
 
 Script em Bash para listar e desinstalar permanentemente programas instalados via arquivos `.deb` no **Ubuntu, Zorin OS, Linux Mint** e derivados do Debian.
 
@@ -31,29 +31,29 @@ Este script identifica automaticamente **todos os pacotes instalados localmente*
 Você pode clonar em qualquer diretório da sua máquina (ex: pasta atual ou `Downloads`):
 
 ```bash
-git clone https://github.com/nelsonsoares/gerenciador-deb.git
-cd gerenciador-deb
+git clone https://github.com/nelsonsoares/deb-manager.git
+cd deb-manager
 ```
 
-### 2. Configurar a pasta de destino (`~/Documentos/gerenciador-deb`)
+### 2. Configurar a pasta de destino (`~/Documentos/deb-manager`)
 
-O alias configurado espera que o script esteja localizado em `~/Documentos/gerenciador-deb/` (`$HOME/Documentos/gerenciador-deb/`).
+O alias configurado espera que o script esteja localizado em `~/Documentos/deb-manager/` (`$HOME/Documentos/deb-manager/`).
 
 #### Opção A: Via Terminal (Rápido)
 Execute estes comandos de dentro da pasta clonada para criar a pasta de destino e mover o script para lá:
 
 ```bash
-mkdir -p "$HOME/Documentos/gerenciador-deb"
-mv gerenciador-deb.sh "$HOME/Documentos/gerenciador-deb/"
-chmod +x "$HOME/Documentos/gerenciador-deb/gerenciador-deb.sh"
+mkdir -p "$HOME/Documentos/deb-manager"
+mv gerenciador-deb.sh "$HOME/Documentos/deb-manager/"
+chmod +x "$HOME/Documentos/deb-manager/gerenciador-deb.sh"
 ```
 
 #### Opção B: Manualmente (Via Gerenciador de Arquivos)
 1. Abra o Gerenciador de Arquivos e vá até a sua pasta **Home** (Pasta Pessoal).
 2. Acesse ou crie a pasta **`Documentos`** (caso não exista).
-3. Dentro de `Documentos`, crie uma nova pasta chamada **`gerenciador-deb`**.
-4. Copie ou mova o arquivo **`gerenciador-deb.sh`** para dentro de `~/Documentos/gerenciador-deb/`.
-5. Garanta que o arquivo tenha permissão de execução (clique com o botão direito em `gerenciador-deb.sh` → **Propriedades** → **Permissões** → marque **"Permitir execução do arquivo como programa"**, ou execute `chmod +x ~/Documentos/gerenciador-deb/gerenciador-deb.sh` no terminal).
+3. Dentro de `Documentos`, crie uma nova pasta chamada **`deb-manager`**.
+4. Copie ou mova o arquivo **`gerenciador-deb.sh`** para dentro de `~/Documentos/deb-manager/`.
+5. Garanta que o arquivo tenha permissão de execução (clique com o botão direito em `gerenciador-deb.sh` → **Propriedades** → **Permissões** → marque **"Permitir execução do arquivo como programa"**, ou execute `chmod +x ~/Documentos/deb-manager/gerenciador-deb.sh` no terminal).
 
 ---
 
@@ -67,7 +67,7 @@ nano ~/.bashrc
 #ou
 nano ~/.zshrc
 
-alias ger-deb="$HOME/Documentos/gerenciador-deb/gerenciador-deb.sh"
+alias ger-deb="$HOME/Documentos/deb-manager/gerenciador-deb.sh"
 
 source ~/.bashrc 
 #ou 
@@ -150,7 +150,7 @@ Caso a desinstalação falhe, o script identifica automaticamente a causa e suge
 ## 📁 Estrutura do Projeto
 
 ```
-gerenciador-deb/
+deb-manager/
 ├── gerenciador-deb.sh   # Script principal (CLI)
 ├── README.md            # Documentação (English)
 └── README.pt-BR.md      # Documentação (Português)

@@ -1,6 +1,6 @@
 # 📦 DEB Uninstall Manager
 
-> **🇧🇷 [Leia em Português](README.pt-BR.md)**
+> **🇧🇷 [Read in Portuguese](README.pt-BR.md)**
 
 A Bash CLI tool to list and permanently uninstall programs installed via `.deb` files on **Ubuntu, Zorin OS, Linux Mint**, and other Debian-based distributions.
 
@@ -31,29 +31,29 @@ This script automatically identifies **all locally installed packages** (outside
 You can clone it to any folder on your machine (e.g., your current directory or `Downloads`):
 
 ```bash
-git clone https://github.com/nelsonsoares/gerenciador-deb.git
-cd gerenciador-deb
+git clone https://github.com/nelsonsoares/deb-manager.git
+cd deb-manager
 ```
 
-### 2. Set up the target folder (`~/Documentos/gerenciador-deb`)
+### 2. Set up the target folder (`~/Documentos/deb-manager`)
 
-The configured alias expects the script to be located in `~/Documentos/gerenciador-deb/` (`$HOME/Documentos/gerenciador-deb/`).
+The configured alias expects the script to be located in `~/Documentos/deb-manager/` (`$HOME/Documentos/deb-manager/`).
 
 #### Option A: Via Terminal (Automated)
 Run these commands from inside the cloned folder to create the destination directory and move the script there:
 
 ```bash
-mkdir -p "$HOME/Documentos/gerenciador-deb"
-mv gerenciador-deb.sh "$HOME/Documentos/gerenciador-deb/"
-chmod +x "$HOME/Documentos/gerenciador-deb/gerenciador-deb.sh"
+mkdir -p "$HOME/Documentos/deb-manager"
+mv gerenciador-deb.sh "$HOME/Documentos/deb-manager/"
+chmod +x "$HOME/Documentos/deb-manager/gerenciador-deb.sh"
 ```
 
 #### Option B: Manually (Via File Manager)
 1. Open your File Manager and navigate to your **Home** folder (`~/`).
 2. Open or create the **`Documentos`** folder (if it doesn't already exist).
-3. Inside `Documentos`, create a new folder named **`gerenciador-deb`**.
-4. Copy or move the file **`gerenciador-deb.sh`** into `~/Documentos/gerenciador-deb/`.
-5. Ensure the file has execution permissions (Right-click `gerenciador-deb.sh` → **Properties** → **Permissions** → check **"Allow executing file as program"**, or run `chmod +x ~/Documentos/gerenciador-deb/gerenciador-deb.sh` in the terminal).
+3. Inside `Documentos`, create a new folder named **`deb-manager`**.
+4. Copy or move the file **`gerenciador-deb.sh`** into `~/Documentos/deb-manager/`.
+5. Ensure the file has execution permissions (Right-click `gerenciador-deb.sh` → **Properties** → **Permissions** → check **"Allow executing file as program"**, or run `chmod +x ~/Documentos/deb-manager/gerenciador-deb.sh` in the terminal).
 
 ---
 
@@ -67,7 +67,7 @@ nano ~/.bashrc
 #or
 nano ~/.zshrc
 
-alias ger-deb="$HOME/Documentos/gerenciador-deb/gerenciador-deb.sh"
+alias ger-deb="$HOME/Documentos/deb-manager/gerenciador-deb.sh"
 
 source ~/.bashrc 
 #or 
@@ -150,7 +150,7 @@ If the uninstallation fails, the script automatically identifies the cause and s
 ## 📁 Project Structure
 
 ```
-gerenciador-deb/
+deb-manager/
 ├── gerenciador-deb.sh   # Main script (CLI)
 ├── README.md            # Documentation (English)
 └── README.pt-BR.md      # Documentation (Português)
