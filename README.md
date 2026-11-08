@@ -28,18 +28,38 @@ This script automatically identifies **all locally installed packages** (outside
 
 ### 1. Clone the repository
 
+You can clone it to any folder on your machine (e.g., your current directory or `Downloads`):
+
 ```bash
 git clone https://github.com/nelsonsoares/gerenciador-deb.git
 cd gerenciador-deb
 ```
 
-### 2. Make it executable
+### 2. Set up the target folder (`~/Documentos/gerenciador-deb`)
+
+The configured alias expects the script to be located in `~/Documentos/gerenciador-deb/` (`$HOME/Documentos/gerenciador-deb/`).
+
+#### Option A: Via Terminal (Automated)
+Run these commands from inside the cloned folder to create the destination directory and move the script there:
 
 ```bash
-chmod +x gerenciador-deb.sh
+mkdir -p "$HOME/Documentos/gerenciador-deb"
+mv gerenciador-deb.sh "$HOME/Documentos/gerenciador-deb/"
+chmod +x "$HOME/Documentos/gerenciador-deb/gerenciador-deb.sh"
 ```
 
+#### Option B: Manually (Via File Manager)
+1. Open your File Manager and navigate to your **Home** folder (`~/`).
+2. Open or create the **`Documentos`** folder (if it doesn't already exist).
+3. Inside `Documentos`, create a new folder named **`gerenciador-deb`**.
+4. Copy or move the file **`gerenciador-deb.sh`** into `~/Documentos/gerenciador-deb/`.
+5. Ensure the file has execution permissions (Right-click `gerenciador-deb.sh` → **Properties** → **Permissions** → check **"Allow executing file as program"**, or run `chmod +x ~/Documentos/gerenciador-deb/gerenciador-deb.sh` in the terminal).
+
+---
+
 ### 3. Create a terminal alias (optional, recommended)
+
+Open your shell configuration file using any text editor of your choice (we use `nano` as an example since it is pre-installed on most Linux distributions, but you can use `vim`, `gedit`, `vscode`, or any other editor):
 
 For **Bash or ZSH**:
 ```bash

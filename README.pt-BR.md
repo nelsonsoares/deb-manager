@@ -28,18 +28,38 @@ Este script identifica automaticamente **todos os pacotes instalados localmente*
 
 ### 1. Clone o repositório
 
+Você pode clonar em qualquer diretório da sua máquina (ex: pasta atual ou `Downloads`):
+
 ```bash
 git clone https://github.com/nelsonsoares/gerenciador-deb.git
 cd gerenciador-deb
 ```
 
-### 2. Dê permissão de execução
+### 2. Configurar a pasta de destino (`~/Documentos/gerenciador-deb`)
+
+O alias configurado espera que o script esteja localizado em `~/Documentos/gerenciador-deb/` (`$HOME/Documentos/gerenciador-deb/`).
+
+#### Opção A: Via Terminal (Rápido)
+Execute estes comandos de dentro da pasta clonada para criar a pasta de destino e mover o script para lá:
 
 ```bash
-chmod +x gerenciador-deb.sh
+mkdir -p "$HOME/Documentos/gerenciador-deb"
+mv gerenciador-deb.sh "$HOME/Documentos/gerenciador-deb/"
+chmod +x "$HOME/Documentos/gerenciador-deb/gerenciador-deb.sh"
 ```
 
+#### Opção B: Manualmente (Via Gerenciador de Arquivos)
+1. Abra o Gerenciador de Arquivos e vá até a sua pasta **Home** (Pasta Pessoal).
+2. Acesse ou crie a pasta **`Documentos`** (caso não exista).
+3. Dentro de `Documentos`, crie uma nova pasta chamada **`gerenciador-deb`**.
+4. Copie ou mova o arquivo **`gerenciador-deb.sh`** para dentro de `~/Documentos/gerenciador-deb/`.
+5. Garanta que o arquivo tenha permissão de execução (clique com o botão direito em `gerenciador-deb.sh` → **Propriedades** → **Permissões** → marque **"Permitir execução do arquivo como programa"**, ou execute `chmod +x ~/Documentos/gerenciador-deb/gerenciador-deb.sh` no terminal).
+
+---
+
 ### 3. Crie um alias no terminal (opcional, recomendado)
+
+Abra o arquivo de configuração do seu shell usando o editor de texto de sua preferência (usamos o `nano` como exemplo por vir instalado por padrão na maioria das distribuições Linux, mas você pode usar `vim`, `gedit`, `vscode` ou qualquer outro de sua escolha):
 
 Para **Bash ou ZSH**:
 ```bash
