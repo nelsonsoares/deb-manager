@@ -350,7 +350,7 @@ menu_principal() {
 
 # Parâmetros de linha de comando
 case "${1:-}" in
-    --list|-l)   listar_pacotes ; exit 0 ;;
-    --remove|-r) desinstalar_pacote ; exit 0 ;;
+    --list|-l)   listar_pacotes ; menu_principal ;;
+    --remove|-r) desinstalar_pacote ; menu_principal ;;
     *)           menu_principal ;;
 esac
